@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    background-image:url(../images/auteurs/background.png);
+}
+
+#video-intro{
+    width:70%;
+    display: flex;
+
+   border: 1px solid pink;
+   margin:auto;
+}
+.paraCenter{
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.btn .btn-primary{
+    padding-left: 50%;
+
+}
+#inputEmail{
+    border-radius: 20px;
+}
+.imgProfil{
+    margin: auto;
+    
+}
+.logo-navbar{
+    width: 100px;
+}

@@ -1,0 +1,9 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+app_video:
+    path: /admin/video
+    controller: App\Controller\VideoController::index
+
+

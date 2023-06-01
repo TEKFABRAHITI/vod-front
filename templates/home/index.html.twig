@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}VOD{% endblock %}
+
+{% block body %}
+    
+<video controls src="{{asset('videos/videointro.mp4')}}" id="video-intro"></video>
+    
+  <p class="text-center paraCenter">Plongez au coeur de la révolution numérique avec notre plateformeVOD TechAssistant  <br> Explorez des formations informatiques restez à la pointe de l'activité technologique <br> pour embrassez les nouvelles frontières du savoir </p>
+        <div class="text-center">
+        <button type="submit" class="btn btn-primary">Let's Go!</button>
+        </div>
+{% endblock %}

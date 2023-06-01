@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VideoController!{% endblock %}
+
+{% block body %}
+<h1>Nos videos</h1>
+{#On affiche tous les videos avec une boucle #}
+	<div class="row">
+	{% for video in videos %}
+		<div class="col-12 col-md-3 col-xl-2">
+		<div class="card">
+		{% if video.previewImage is defined and video.previewImage is not null %}
+  	<img src="{{ asset('images/videos/' ~ video.previewImage) }}" class="card-img-top" alt="">
+		{% else %}
+		<img src="{{ asset('images/videos/book-default.png') }}" class="card-img-top" alt="image par default">
+		{% endif %}
+
+  <div class="card-body">
+		<a href="{{ path('app_video_show', { slug: video.slug}) }}" class="text-dark">{{ video.title }}</a>
+    	
+  </div>
+</div>
+		
+		</div>
+	{% endfor %}
+	</div>
+{% endblock %}

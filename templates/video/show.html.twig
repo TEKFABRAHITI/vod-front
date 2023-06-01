@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ video.title }}{% endblock %}
+
+{% block body %}
+<h1>{{ video.title }}</h1>
+<div class="row">
+	<div class="col-12 col-md-3">
+		{% if video.previewImage is defined and video.previewImage is not null %}
+  	<img src="{{ asset('images/videos/' ~ video.previewImage) }}" alt="" class="img-fluid">
+		{% else %}
+		<img src="{{ asset('images/videos/book-default.png') }}" alt="" class="img-fluid">
+		{% endif %}
+</div>
+<div class="col-12 col-md-9">
+<h2>Description :</h2>
+<p>{{ video.description }}</p>
+
+</div>
+</div>
+
+
+{% endblock %}
